@@ -7,7 +7,8 @@ if (global.PLAYER != noone) {
             mp_grid_destroy(global.GEN_PATHGRID);
             
             // Delete crosshair
-            with (obj_crosshair) {
+            with (global.CROSSHAIR) {
+                global.CROSSHAIR = noone;
                 instance_destroy();
             }
             
