@@ -12,8 +12,8 @@ if (global.GAME_OVER == true) {
     audio_play_sound(snd_thank, 0, false);
 
     if (message_handler.messages_last == false) {
-        var a_button = action1Pressed();
-        var b_button = action2Pressed();
+        var a_button = action1Pressed() || mouse_check_button_pressed(mb_left);
+        var b_button = action2Pressed() || mouse_check_button_pressed(mb_right);
         if (a_button == true) room_restart();
         if (b_button == true) room_goto(rm_titleScreen);
     }
@@ -29,8 +29,8 @@ if (global.GAME_OVER == true) {
         }
     
         if (message_handler.messages_last == false) {
-            var a_button = action1Pressed();
-            var b_button = action2Pressed();
+            var a_button = action1Pressed() || mouse_check_button_pressed(mb_left);
+            var b_button = action2Pressed() || mouse_check_button_pressed(mb_right);
     
             if (a_button == true) room_restart();
             if (b_button == true) room_goto(rm_titleScreen);
@@ -77,7 +77,7 @@ if (global.GAME_OVER == true) {
     
         if (global.GAME_ENEMY == -1 && global.GAME_PASS == true && message_handler != noone) {
             if (message_handler.messages_last == false) {
-                if (action1Pressed() == true) {
+                if (action1Pressed() == true || mouse_check_button_pressed(mb_left) == true) {
                     message_handler.messages_last = true;
                     global.GAME_PASS = false;
                     instance_destroy(message_handler);
