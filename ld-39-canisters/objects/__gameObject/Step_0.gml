@@ -11,7 +11,7 @@ if (global.GAME_OVER == true) {
     
     audio_play_sound(snd_thank, 0, false);
 
-    if (message_handler.messages_last == true) {
+    if (message_handler.messages_last == false) {
         var a_button = action1Pressed();
         var b_button = action2Pressed();
         if (a_button == true) room_restart();
@@ -28,7 +28,7 @@ if (global.GAME_OVER == true) {
             message_handler = instance_create_depth(x, y, 0, __gameDialogueEnd);
         }
     
-        if (message_handler.messages_last == true) {
+        if (message_handler.messages_last == false) {
             var a_button = action1Pressed();
             var b_button = action2Pressed();
     

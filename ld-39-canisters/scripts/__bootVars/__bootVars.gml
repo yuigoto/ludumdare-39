@@ -18,8 +18,8 @@ global.GAME_BUILD   = false;
 global.GAME_ENEMY   = 0;
 
 // Generator Variables
-global.GEN_STEPS    = 1000;
-global.GEN_TILES    = 600;
+global.GEN_STEPS    = 500;
+global.GEN_TILES    = 100;
 global.GEN_ODDS     = 100;
 global.GEN_PLACED   = 0;
 global.GEN_WALKED   = 0;

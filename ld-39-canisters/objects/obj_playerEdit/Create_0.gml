@@ -6,8 +6,8 @@ player_srfc     = noone;
 player_health   = 100;
 
 // Ammo indicators
-player_ammo     = 200;
-player_max_ammo = 200;
+player_ammo     = 100;
+player_max_ammo = 100;
 
 // Walking speed max
 walk_spd_max    = 2;
