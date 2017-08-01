@@ -71,7 +71,7 @@ if (
 }
 
 // Fast render
-if (action1()) {
+if (action1() || mouse_check_button_pressed(mb_left)) {
     char_speed = char_speed_max;
 }
 
