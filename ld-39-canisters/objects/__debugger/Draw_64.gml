@@ -1,4 +1,5 @@
 /// @description  Draw Debug UI Stuff
+/*
 if (surface_exists(dbgr)) {
     // Window width and height
     var win_w, win_h;
@@ -45,5 +46,6 @@ if (surface_exists(dbgr)) {
     // Draw the surface
     draw_surface(dbgr, view_xport[0], view_yport[0]);
 }
+*/
 
 //draw_text(32, 64, fps_real);

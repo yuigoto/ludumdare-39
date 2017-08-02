@@ -29,7 +29,7 @@ if (surface_exists(srfc)) {
     );
     
     drawTextOutlineExt(
-        "Press start, space or click\nwith your mouse to start", 
+        "Press start, space or click with your mouse to start\nPress F10 any time to go fullscreen", 
         room_width / 2, 
         room_height / 2 + 32, 
         2, 

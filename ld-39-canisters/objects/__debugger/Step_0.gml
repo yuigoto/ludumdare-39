@@ -5,6 +5,7 @@ var nv_quit     = keyboard_check_pressed(vk_end) || keyboard_check_pressed(vk_es
 var nv_move     = keyboard_check_pressed(vk_pageup) - keyboard_check_pressed(vk_pagedown);
 var nv_fscreen  = keyboard_check_pressed(vk_f10);
 
+/*
 if (nv_quit) game_end();
 if (nv_restart) game_restart();
 
@@ -46,6 +47,7 @@ if (nv_move != 0) {
     
     room_goto(room_move);
 }
+*/
 
 if (nv_fscreen) {
     window_set_fullscreen(!window_get_fullscreen());
