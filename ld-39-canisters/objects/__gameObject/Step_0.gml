@@ -1,8 +1,9 @@
 /// @description DescriptionGoesHere
 
 if (global.GAME_OVER == true) {
-    if (audio_is_playing(music_item)) {
-        audio_stop_sound(music_item);
+    if (global.MUSIC != noone && audio_is_playing(global.MUSIC)) {
+        audio_stop_sound(global.MUSIC);
+        global.MUSIC = noone;
     }
     
     if (message_handler == noone) {
@@ -20,8 +21,9 @@ if (global.GAME_OVER == true) {
 } else {
     // End Game
     if (global.GAME_END == true) {
-        if (audio_is_playing(music_item)) {
-            audio_stop_sound(music_item);
+        if (global.MUSIC != noone && audio_is_playing(global.MUSIC)) {
+            audio_stop_sound(global.MUSIC);
+            global.MUSIC = noone;
         }
         
         if (message_handler == noone) {
@@ -35,6 +37,10 @@ if (global.GAME_OVER == true) {
             if (a_button == true) room_restart();
             if (b_button == true) room_goto(rm_titleScreen);
         }
+    }
+    
+    if (global.MUSIC != noone && audio_sound_get_track_position(global.MUSIC) >= 222.86) {
+        audio_sound_set_track_position(global.MUSIC, 58.33);
     }
 
     // Game
@@ -92,10 +98,13 @@ if (global.GAME_OVER == true) {
     }
 
     if (global.GAME_INI == false) {
-        if (audio_is_playing(music_item)) {
-            audio_stop_sound(music_item);
+        if (global.MUSIC != noone && audio_is_playing(global.MUSIC)) {
+            audio_stop_sound(global.MUSIC);
+            global.MUSIC = noone;
         }
-        audio_play_sound(music_item, false, false);
+        
+        global.MUSIC = audio_play_sound(music_item, false, false);
+        
         global.GAME_INI = true;
         message_handler = instance_create_depth(x, y, 0, __gameDialogue);
 

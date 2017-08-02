@@ -6,6 +6,7 @@ global.PLAYER           = noone;
 global.CAMERA           = noone;
 global.CAMERA_GENERIC   = noone;
 global.CROSSHAIR        = noone;
+global.MUSIC            = noone;
 
 // Game Management
 global.GAME_INI     = false;
