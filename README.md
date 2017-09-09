@@ -1,13 +1,9 @@
-PLASMAGUN!
-==========
-###### A game by Fabio Y. Goto
+YX : Jam : LD39 - PLASMAGUN!
+============================
 
-Made for the Ludum Dare #39 game jam, with the theme: "**Running out of Power**".
+_LD39 Theme: **Running Out Of Power**_
 
------
-
-About
------
+> A top-down, twin-stick shooter about wasting ammo.
 
 Hello, Soldier! Welcome to our 100 room training program! :100:
 
@@ -21,16 +17,19 @@ Oh...well, looks like we ran out of equipment! BUT we do have a prototype pack y
 
 And to you, there, looking at us right now. Yeah, **YOU** on the chair! To help us test this stuff here you'll have to use your mouse + keyboard or an X360 controller (no endorsements here).
 
-The controls are:
+That's it! We're counting on you! Our bots won't hurt you (too much), but don't die in there!
+
+## Controls
+
 - WASD or Left Analog: Move;
 - Mouse or Right Analog: Aim;
 - Left Click or Right Trigger: Shoot;
 - Right Click or Left Trigger: Dash (yeah, we know this left/right thing's confusing);
 - Spacebar, Enter or A Button (I don't remember very well) start the game or jump text/cutscenes;
 
-That's it! We're counting on you! Our bots won't hurt you (too much), but don't die in there!
+## Dependencies
 
------
+The project was built using **GameMaker Studio 1** and, as such, you'll need to have it installed on your machine.
 
 ## Tools Used
 
@@ -40,15 +39,22 @@ In making this game, the following tools were used:
 - **Audio:** Sound Forge Music Studio, Wavosaur, FL Studio, iPad 2 + Ampkit, Old Guitar + Onerr GEP50 Pedal;
 - **Food:** Lots!
 
------
+## Authors
 
-## Author
-
-**Fabio Y. Goto** ([@go_go_goto](https://twitter.com/go_go_goto))
-I'm a São Paulo/BR based web designer and developer, delving into the gamedev world.
-
------
+- **Fabio Y. Goto** ([lab@yuiti.com.br][mailto01]);
 
 ## License
 
-The code in this repo is and will be licensed under the `MIT License`. Check `LICENSE.md` for details on it.
+The code/logic in this repo is distributed under the `MIT License`, plase check the `LICENSE.md` file.
+
+The artwork and music, though, isn't. If you want to use part of the artwork in here to create derivative works or other uses, just contact me! It doesn't hurt and feels nice, ok? :)
+
+-----
+
+_© 2017 Fabio Y. Goto_
+
+[\\]: ======================================================================
+
+[mailto01]: mailto:lab@yuiti.com.br
+
+[\\]: ======================================================================
